@@ -17,6 +17,7 @@
 variable "each_vm" {
 
   type = list(object({ vm_name = string, cpu = number, ram = number, disk_volume = number, disk_type = string, core_fraction = number, platform_id = string, preemptible = bool }))
+  
   default = [{
   
     core_fraction = 20
